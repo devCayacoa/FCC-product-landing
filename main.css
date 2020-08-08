@@ -1,0 +1,237 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  min-width: 320px;
+  background: url("data:image/svg+xml;headers=Content-Disposition%3A%20attachment%3B%20filename=pattern.b64;base64,PHN2ZyB4PSIwIiB5PSIwIiB3aWR0aD0iNzAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDE1MzEuMjUgNzY1LjYyNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6Zmk9Imh0dHA6Ly9wYXR0ZXJuLmZsYXRpY29uLmNvbS8iPjxyZWN0IHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBvcGFjaXR5PSIxIiBmaWxsPSIjZmZmZmZmIi8+PGRlZnM+PGcgdHJhbnNmb3JtPSJtYXRyaXgoMC4zNTM2MjQxNjUwNTgxMzYgMC4yMTEyMjUxNjY5MTY4NDcyMyAtMC4yMTEyMjUxNjY5MTY4NDcyMyAwLjM1MzYyNDE2NTA1ODEzNiAyMDUuNzI0Mzk1NzUxOTUzMTIgNzkuNTUyNTI4MzgxMzQ3NjYpIiBpZD0iTDFfMyI+PHBhdGggZD0iTTMzNi45NCwzMzAuNkE4Ny4xMTksODcuMTE5LDAsMCwwLDM0NCwyOTZhODguMjY3LDg4LjI2NywwLDAsMC02NC04NC42NlYxMjBoOGE4LDgsMCwwLDAsNy45Ny03LjM0TDI5OC4wMyw4OEgzMDRhOCw4LDAsMCwwLDAtMTZoLTQuNjRsMS4zMy0xNkgzMDRhOCw4LDAsMCwwLDAtMTZoLTEuOTdsMS45NC0yMy4zNEE3Ljk4Nyw3Ljk4NywwLDAsMCwyOTYsOEgyMTZhNy45ODcsNy45ODcsMCwwLDAtNy45Nyw4LjY2TDIwOS45Nyw0MEgyMDhhOCw4LDAsMCwwLDAsMTZoMy4zMWwxLjMzLDE2SDIwOGE4LDgsMCwwLDAsMCwxNmg1Ljk3bDIuMDYsMjQuNjZBOCw4LDAsMCwwLDIyNCwxMjBoOHY5MS4zNEE4OC4yNjcsODguMjY3LDAsMCwwLDE2OCwyOTZhODcuMTE5LDg3LjExOSwwLDAsMCw3LjA2LDM0LjZBMTEyLjQxOCwxMTIuNDE4LDAsMCwwLDE0NCw0MDhjMCwyOS43MywxMS41OSw1NC41NiwzMy41MSw3MS44M0MxOTcuMzEsNDk1LjQyLDIyNS4xOCw1MDQsMjU2LDUwNHM1OC42OS04LjU4LDc4LjQ5LTI0LjE3QzM1Ni40MSw0NjIuNTYsMzY4LDQzNy43MywzNjgsNDA4QTExMi40MTgsMTEyLjQxOCwwLDAsMCwzMzYuOTQsMzMwLjZaTTIzMS4zNiwxMDRsLTYuNjctODBoNjIuNjJsLTYuNjcsODBaTTI0OCwyMzJWMjE2aDE2djE2Wm0xNiwxNnYxNkgyNDhWMjQ4Wm0tMTYtNDhWMTg0aDE2djE2Wm0wLTMyVjE1MmgxNnYxNlptMC0zMlYxMjBoMTZ2MTZabTc2LjU5LDMzMS4yNUMzMDcuNiw0ODAuNjMsMjgzLjI0LDQ4OCwyNTYsNDg4cy01MS42LTcuMzctNjguNTktMjAuNzVDMTY5LjQ4LDQ1My4xMywxNjAsNDMyLjY0LDE2MCw0MDhhOTUuMDY4LDk1LjA2OCwwLDAsMSwzMC4xNy02OS44Nyw3Ljk5Miw3Ljk5MiwwLDAsMCwxLjY1LTkuNDVBNzEuMzIzLDcxLjMyMywwLDAsMSwxODQsMjk2YTcyLjI1NSw3Mi4yNTUsMCwwLDEsNDgtNjcuODlWMjcyYTgsOCwwLDAsMCw4LDhoMzJhOCw4LDAsMCwwLDgtOFYyMjguMTFBNzIuMjU1LDcyLjI1NSwwLDAsMSwzMjgsMjk2YTcxLjMyMyw3MS4zMjMsMCwwLDEtNy44MiwzMi42OCw3Ljk5Miw3Ljk5MiwwLDAsMCwxLjY1LDkuNDVBOTUuMDY4LDk1LjA2OCwwLDAsMSwzNTIsNDA4QzM1Miw0MzIuNjQsMzQyLjUyLDQ1My4xMywzMjQuNTksNDY3LjI1WiIgZmlsbD0iIzlkZmFlMSIvPjxwYXRoIGQ9Ik0yNTYsMzY4YTQwLDQwLDAsMSwwLTQwLTQwQTQwLjA0NSw0MC4wNDUsMCwwLDAsMjU2LDM2OFptMC02NGEyNCwyNCwwLDEsMS0yNCwyNEEyNC4wMjgsMjQuMDI4LDAsMCwxLDI1NiwzMDRaIiBmaWxsPSIjOWRmYWUxIi8+PHBhdGggZD0iTTI5Niw0MDBIMjE2YTgsOCwwLDAsMC04LDh2MjRhOCw4LDAsMCwwLDgsOGg4MGE4LDgsMCwwLDAsOC04VjQwOEE4LDgsMCwwLDAsMjk2LDQwMFptLTgsMjRIMjI0di04aDY0WiIgZmlsbD0iIzlkZmFlMSIvPjwvZz48L2RlZnM+PGcgZmk6Y2xhc3M9IktVc2VQYXR0ZXJuIiBvcGFjaXR5PSIwLjQyIj48cGF0dGVybiBpZD0icGF0dGVybl9MMV8zIiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjM1MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHVzZSB4bGluazpocmVmPSIjTDFfMyIgeD0iLTM1MCIgeT0iLTM1MCIvPjx1c2UgeGxpbms6aHJlZj0iI0wxXzMiIHg9IjAiIHk9Ii0zNTAiLz48dXNlIHhsaW5rOmhyZWY9IiNMMV8zIiB4PSIzNTAiIHk9Ii0zNTAiLz48dXNlIHhsaW5rOmhyZWY9IiNMMV8zIiB4PSItMzUwIiB5PSIwIi8+PHVzZSB4bGluazpocmVmPSIjTDFfMyIgeD0iMCIgeT0iMCIvPjx1c2UgeGxpbms6aHJlZj0iI0wxXzMiIHg9IjM1MCIgeT0iMCIvPjx1c2UgeGxpbms6aHJlZj0iI0wxXzMiIHg9Ii0zNTAiIHk9IjM1MCIvPjx1c2UgeGxpbms6aHJlZj0iI0wxXzMiIHg9IjAiIHk9IjM1MCIvPjx1c2UgeGxpbms6aHJlZj0iI0wxXzMiIHg9IjM1MCIgeT0iMzUwIi8+PC9wYXR0ZXJuPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybl9MMV8zKSIvPjwvZz48L3N2Zz4=");
+  background-attachment: fixed;
+}
+
+::selection {
+  background-color: rgba(20, 245, 185, 0.25);
+}
+
+nav {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: black;
+}
+
+.navbar {
+  padding: 1em 2em;
+}
+
+.bg-light {
+  background: white;
+}
+
+#nav-brand-img {
+  width: 40px;
+}
+
+#nav-brand {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  color: #06d6a0;
+  margin-left: 0.35em;
+}
+
+.nav-brand-container:hover,
+.nav-brand-container:focus {
+  transform: scale(1.1);
+  transition: 0.3s ease-out;
+}
+
+.brand-academy {
+  font-style: normal;
+  font-weight: 400;
+  color: black;
+}
+.navbar-toggler {
+  font-size: 1.5rem;
+}
+
+.navbar-toggler:focus {
+  border: none;
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #06d6a0;
+}
+
+header {
+  margin: 0 auto;
+}
+
+main {
+  background-color: white;
+}
+
+.hero {
+  padding: 4em 0;
+}
+
+.hero-caption {
+  padding: 0 2.6em 2em;
+  max-width: 500px;
+  margin: 4em auto;
+}
+
+.hero-title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  text-align: start;
+}
+
+.philosophy-priority {
+  font-weight: 700;
+  color: #06d6a0;
+}
+
+.philosophy-subtitle {
+  font-weight: 300;
+  width: 80%;
+  margin-left: 0.2em;
+  margin-bottom: 1em;
+}
+
+.philosophy--principle {
+  width: 100%;
+  /* max-width: 17em; */
+}
+
+.philosophy--principle-title {
+  font-weight: 600;
+}
+
+.products-title {
+  font-weight: 700;
+}
+
+.products-subtitle {
+  font-weight: 300;
+  width: 80%;
+  margin-left: 0.2em;
+  margin-bottom: 1em;
+}
+
+.card {
+  margin: 1em auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-body {
+  margin: 1em;
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.product-price {
+  font-weight: 600;
+}
+
+.buy-btn {
+  background: transparent;
+  color: #06d6a0;
+  border-color: #06d6a0;
+  font-weight: 600;
+  margin: 0 1em;
+}
+
+.card-btn-container {
+  margin: 2.5em 0 0 0;
+}
+
+.btn {
+  font-weight: 600;
+  border-color: none;
+  opacity: 0.7;
+}
+
+.btn:focus,
+.btn:hover {
+  color: #06d6a0;
+  opacity: 1;
+  transform: scale(1.1);
+  transition: 0.5s ease-out;
+}
+
+.btn-primary {
+  background: #06d6a0;
+  border: none;
+  opacity: 0.7;
+}
+
+.btn-primary:focus,
+.btn-primary:hover {
+  color: white;
+  background: #06d6a0;
+  opacity: 1;
+  transform: scale(1.1);
+  transition: 0.5s ease-out;
+}
+
+#subscription {
+  margin: 1em;
+}
+
+.subscription-title {
+  font-weight: 700;
+  width: 100%;
+}
+
+.free {
+  color: #06d6a0;
+  font-weight: 800;
+}
+
+.subscription-subtitle {
+  margin: 0 auto;
+  font-weight: 300;
+  width: 80%;
+}
+
+.subscription-form {
+  max-width: 35em;
+  margin: 3em auto;
+  padding: 2.5em;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+}
+
+.form-control {
+  margin: 1.2em 0;
+}
+
+.form-control:focus {
+  box-shadow: 5px 5px #06d6a0;
+}
+
+.footer-container {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .philosophy--principle {
+    max-width: 50%;
+  }
+}
