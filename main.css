@@ -46,6 +46,10 @@ nav {
   margin-left: 0.35em;
 }
 
+.philosophy--principle-container {
+  display: flex;
+}
+
 .nav-brand-container:hover,
 .nav-brand-container:focus {
   transform: scale(1.1);
